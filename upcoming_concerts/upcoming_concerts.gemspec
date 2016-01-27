@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["briganenser28@gmail.com"]
 
   spec.summary       = %q{This gem shows the next 5 concerts in Phoenix, AZ area.}
-  spec.homepage      = " "
+  spec.homepage      = "https://github.com/benser1/benser1-cli-gem/tree/master/upcoming_concerts"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -23,8 +23,8 @@ Gem::Specification.new do |spec|
   
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.bindir        = "bin"
+  spec.executables   = ["upcoming_concerts"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.10"
