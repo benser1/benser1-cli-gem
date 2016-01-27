@@ -5,7 +5,6 @@ class UpcomingConcerts::CLI
   def call
     show_concerts
     menu
-    goodbye
   end
 
   def show_concerts
@@ -24,20 +23,120 @@ end
   def menu  ##### This will redirect the user to the concert they are interested in ######
     input = nil
     while input != "exit"
-      puts "Which concert do you want to know more about? Type 1 - 5, or type exit."
+      puts "Which concert would you like to know more about? Type 1 - 5, list, or type exit."
       input = gets.strip.downcase
 
       if input == "1" 
-        puts Concerts.call_1
+        # puts "What would you like to know? Type one of the following: Date, Venue, City, Time, Day, All, or exit"
+        # one = gets.chomp.downcase
+        loop do
+            puts "What would you like to know? Please Type: Date, Venue, City, Time, Day, All, or exit"
+            one = gets.strip.downcase
+          if one == "exit"          
+            break
+          elsif one == "date"
+            puts "Concert Date: " + Concerts.concert_1[:date]
+          elsif one == "venue"
+            puts "Venue Location: " + Concerts.concert_1[:venue_name]
+          elsif one == "city"
+            puts "City: " + Concerts.concert_1[:city]
+          elsif one == "time"
+            puts "Concert Time: " + Concerts.concert_1[:time]
+          elsif one == "day"
+            puts "Concert Day: " + Concerts.concert_1[:day]
+          elsif one == "all"
+            puts Concerts.call_1
+            break
+          end
+        end
       elsif input == "2"
-        puts Concerts.call_2
+        loop do
+            puts "What would you like to know? Please Type: Date, Venue, City, Time, Day, All, or exit"
+            one = gets.strip.downcase
+          if one == "exit"
+            break
+          elsif one == "date"
+            puts "Concert Date: " + Concerts.concert_2[:date]
+          elsif one == "venue"
+            puts "Venue Location: " + Concerts.concert_2[:venue_name]
+          elsif one == "city"
+            puts "City: " + Concerts.concert_2[:city]
+          elsif one == "time"
+            puts "Concert Time: " + Concerts.concert_2[:time]
+          elsif one == "day"
+            puts "Concert Day: " + Concerts.concert_2[:day]
+          elsif one == "all"
+            puts Concerts.call_2
+            break
+          end
+        end
       elsif input == "3"
-        puts Concerts.call_3
+        loop do
+            puts "What would you like to know? Please Type: Date, Venue, City, Time, Day, All, or exit"
+            one = gets.strip.downcase
+          if one == "exit"
+            break
+          elsif one == "date"
+            puts "Concert Date: " + Concerts.concert_3[:date]
+          elsif one == "venue"
+            puts "Venue Location: " + Concerts.concert_3[:venue_name]
+          elsif one == "city"
+            puts "City: " + Concerts.concert_3[:city]
+          elsif one == "time"
+            puts "Concert Time: " + Concerts.concert_3[:time]
+          elsif one == "day"
+            puts "Concert Day: " + Concerts.concert_3[:day]
+          elsif one == "all"
+            puts Concerts.call_3
+            break
+          end
+        end
       elsif input == "4"
-        puts Concerts.call_4
+        loop do
+            puts "What would you like to know? Please Type: Date, Venue, City, Time, Day, All, or exit"
+            one = gets.strip.downcase
+          if one == "exit"
+            break
+          elsif one == "date"
+            puts "Concert Date: " + Concerts.concert_4[:date]
+          elsif one == "venue"
+            puts "Venue Location: " + Concerts.concert_4[:venue_name]
+          elsif one == "city"
+            puts "City: " + Concerts.concert_4[:city]
+          elsif one == "time"
+            puts "Concert Time: " + Concerts.concert_4[:time]
+          elsif one == "day"
+            puts "Concert Day: " + Concerts.concert_4[:day]
+          elsif one == "all"
+            puts Concerts.call_4
+            break
+          end
+        end
       elsif input == "5"
-        puts Concerts.call_5
+        loop do
+            puts "What would you like to know? Please Type: Date, Venue, City, Time, Day, All, or exit"
+            one = gets.strip.downcase
+          if one == "exit"
+            break
+          elsif one == "date"
+            puts "Concert Date: " + Concerts.concert_5[:date]
+          elsif one == "venue"
+            puts "Venue Location: " + Concerts.concert_5[:venue_name]
+          elsif one == "city"
+            puts "City: " + Concerts.concert_5[:city]
+          elsif one == "time"
+            puts "Concert Time: " + Concerts.concert_5[:time]
+          elsif one == "day"
+            puts "Concert Day: " + Concerts.concert_5[:day]
+          elsif one == "all"
+            puts Concerts.call_5
+            break
+          end
+        end
+      elsif input == "list"
+        show_concerts
       elsif input == "exit"
+        goodbye
       end
     end
   end

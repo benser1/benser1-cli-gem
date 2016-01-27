@@ -108,48 +108,68 @@ class Concerts
   end
 
   def self.call_1
+      puts ""
+      puts "Information for " + Concerts.concert_1[:artist] + " concert:"
+      puts "--------------------------------------------"
       puts "Artist: " + Concerts.concert_1[:artist]
       puts "Venue: " + Concerts.concert_1[:venue_name]
       puts "City: " + Concerts.concert_1[:city]
       puts "Day: " + Concerts.concert_1[:day]
       puts "Date: " + Concerts.concert_1[:date]
       puts "Time: " + Concerts.concert_1[:time]
+      puts "--------------------------------------------"
   end
 
   def self.call_2
+    puts ""
+    puts "Information for " + Concerts.concert_2[:artist] + " concert:"
+    puts "--------------------------------------------"
     puts "Artist: " + Concerts.concert_2[:artist]
     puts "Venue: " + Concerts.concert_2[:venue_name]
     puts "City: " + Concerts.concert_2[:city]
     puts "Day: " + Concerts.concert_2[:day]
     puts "Date: " + Concerts.concert_2[:date]
     puts "Time: " + Concerts.concert_2[:time]
+    puts "--------------------------------------------"
   end
 
   def self.call_3
+    puts ""
+    puts "Information for " + Concerts.concert_3[:artist] + " concert:"
+    puts "--------------------------------------------"
     puts "Artist: " + Concerts.concert_3[:artist]
     puts "Venue: " + Concerts.concert_3[:venue_name]
     puts "City: " + Concerts.concert_3[:city]
     puts "Day: " + Concerts.concert_3[:day]
     puts "Date: " + Concerts.concert_3[:date]
     puts "Time: " + Concerts.concert_3[:time]
+    puts "--------------------------------------------"
   end
 
   def self.call_4
+    puts ""
+    puts "Information for " + Concerts.concert_4[:artist] + " concert:"
+    puts "--------------------------------------------"
     puts "Artist: " + Concerts.concert_4[:artist]
     puts "Venue: " + Concerts.concert_4[:venue_name]
     puts "City: " + Concerts.concert_4[:city]
     puts "Day: " + Concerts.concert_4[:day]
     puts "Date: " + Concerts.concert_4[:date]
     puts "Time: " + Concerts.concert_4[:time]
+    puts "--------------------------------------------"
   end
 
   def self.call_5
+    puts ""
+    puts "Information for " + Concerts.concert_5[:artist] + " concert:"
+    puts "--------------------------------------------"
     puts "Artist: " + Concerts.concert_5[:artist]
     puts "Venue: " + Concerts.concert_5[:venue_name]
     puts "City: " + Concerts.concert_5[:city]
     puts "Day: " + Concerts.concert_5[:day]
     puts "Date: " + Concerts.concert_5[:date]
     puts "Time: " + Concerts.concert_5[:time]
+    puts "--------------------------------------------"
   end
 
 end

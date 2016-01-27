@@ -1,12 +1,15 @@
 - A command line interface for upcoming concerts in Phoenix Area
 
-user in PHX types upcoming concerts
+user in Phoenix is looking for upcoming concerts in PHX area
 
 Shows a list of upcoming concerts w/ date and venue info
 
 Which artist do you want to see?
 
-1 -- This will return artist_1 info
+1 -- This will return artist_1 info:
+-- concert date / day / time
+-- venue location
+-- city
 
 2 -- This will return artist_2 info  
 
